@@ -3192,3 +3192,29 @@ Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/sriram
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2024-11-05 17:24:29.696
 !MESSAGE close() called when useCnt is already zero for Repository[C:\Users\6126332\OneDrive - Thomson Reuters Incorporated\Selenium\All_Wizards\.git]
+!SESSION 2024-11-05 18:41:36.617 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=23
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-05 18:41:39.289
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-05 18:41:43.836
+!MESSAGE Logback config file: C:\Users\6126332\OneDrive - Thomson Reuters Incorporated\Selenium\All_Wizards\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.core 4 0 2024-11-05 18:45:08.544
+!MESSAGE An exception occurred during push on URI https://github.com/srirampadhy8488/SurePrepTR.git: https://github.com/srirampadhy8488/SurePrepTR.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/srirampadhy8488/SurePrepTR.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:694)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
